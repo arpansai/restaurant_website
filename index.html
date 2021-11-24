@@ -1,0 +1,443 @@
+<!-- SO THIS IS MY SUBMISSION .
+THERE ARE A FEW POINTS I WOULD LIKE YOU TO CHECK IN MY SUBMISSION
+1. FROM LINE NO. 265 TO 328 I HAVE MADE THE WEBSITE RESPONSIVE . DO REMOVE IT FROM COMMENT TAG AND CHECK RESPONSIVENESS.
+2. YES , I HAVE WORKED VERY HARD TO MAKE IT RESPONSIVE. I COMMENTED THE PART . PLEASE REMOVE THE COMMENTS AND RUN THE CODE
+3. THANK YOU . THIS WAS FUN WORKING .  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai's Restaurant| World's finest Restaurant|SaiRestaurant.com</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" media="screen and (max-width:1331px)" href="responsive.css">
+     <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Praise&family=Shalimar&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Praise&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&family=Praise&display=swap" rel="stylesheet">
+     <style>
+        /*css reset*/
+    *{
+    
+    margin:0;
+    padding:0;
+    }
+    /*css variables*/
+    :root{
+    --navbar-height:59px;
+    }
+    /*navigation bar*/
+    #navbar{
+    display:flex;
+    align-items: center;
+    top:0;
+    position:sticky;
+    
+    }
+    #navbar::before{
+    content:"";
+    background-color:black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.7;
+    
+    }
+    /*navigation bar:logo and image*/
+    #logo{
+      margin: 23px 34px;
+    
+    }
+    #logo img{
+    border-radius: 15px;
+    height:69px;
+    margin:3px 5px;
+    
+    }
+    /*navigation bar:list styling */
+    
+    #navbar ul{
+    display:flex;
+    font-family: 'Lobster', cursive;
+    
+    }
+    
+    #navbar ul li a{
+    color:blueviolet;
+    display:block;
+    padding :3px 22px;
+    border-radius: 20px;
+    text-decoration: none; 
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in;
+    
+    
+    }
+    #navbar ul li a:hover{
+    color:purple;
+    background-color:violet;
+    display:block;
+    padding :3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+    
+    }
+    
+    #navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    }
+    /*home section*/
+    #home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:600px;
+    justify-content: center;
+    align-items: center;
+    }
+    #home::before{
+    content:"";
+     background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Kellosaarenranta_by_night.JPG/1280px-Kellosaarenranta_by_night.JPG);
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:198%;
+    width:100%;
+    z-index: -1;
+    opacity:1;
+    }
+    #home h1{
+    color:orange;
+    text-align: center;
+    font-family: 'Praise', cursive;
+    font-size: 3.8rem;
+    }
+    #home p{
+    color:bisque;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Praise', cursive;
+    }
+    #home div{
+    color:white;
+    }
+    /*services container*/
+    .services-container{
+     color:white ;
+    }
+    
+    #services{
+    
+    margin:34px;
+    display:flex;
+    }
+    #services .box{
+    font-family: 'Praise', cursive;
+    
+    margin:3px 6px;
+    border-radius: 28px;
+    background-color:palevioletred;
+    opacity:0.8;
+    text-decoration: none; 
+    transition-property: all;
+    transition-duration: 0.9s;
+    transition-timing-function: ease-in;
+    }
+    #services .box:hover{
+    font-family: 'Lobster', cursive;    
+    margin:3px 6px;
+    border-radius: 15px;
+    background-color:rgb(243, 122, 9);
+    opacity:0.9;
+    
+    }
+    #services .box img{
+    height: 257px;
+    margin: auto;
+    display: block;
+    }
+    
+    /*client section*/
+    
+    #client-section{
+    height:344px;
+    }
+    #client-section::before{
+    content:"";
+    position: absolute;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Cappadociasunrise.jpg/1280px-Cappadociasunrise.jpg');
+    width:100%;
+    height:54%;
+    z-index: -1;
+    opacity:0.8;
+    
+    }
+    #clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    #clients:hover{
+    
+    }
+    #client-item{
+    padding:50px;
+    }
+    #clients img{
+    height:96px;
+    
+    }
+    /*contact us section*/
+    #contact{
+    color:white;
+    }
+    #contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:102%;
+    z-index: -1;
+    opacity:1;
+    background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Social_media.png/1280px-Social_media.png')no-repeat center center/cover;
+    
+    }
+    #contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px;
+    }
+    #contact-box input,
+    #contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size:1.1rem;
+    }
+    #contact-box form{
+    width:40%;
+    }
+    #contact-box label{
+    font-size:1.3rem;
+    }
+    footer{
+    background-color:black;
+    color:white;
+    padding :9px 2px;
+    }
+    /*Utility Classes*/
+    .h-primary{
+    font-family: 'Praise', cursive;
+    
+     font-size: 2.8rem;
+     padding:12px;
+    }
+    h-secondary{
+    
+     text-align: center;
+     font-size: 3.8rem;
+     padding:12px;
+    }
+    .btn{
+     padding:6px 20px;
+     border: 2px solid white;
+     background-color:pink;
+     margin:17px;
+     font-size: 1.5rem;
+     border-radius: 13px;
+     cursor:pointer;
+    }
+    .center{
+     text-align: center;
+    }
+    </style>
+
+
+<!-- THIS IS FOR RESPONSIVE PART . PLEASE DO REMOVE THE COMMENT TO SEE THE RESULT -->
+
+  <style>
+/*Navigation section*/
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a {
+     font-size:1rem;
+     padding:0px 7px;
+}
+/*home section*/ 
+#home{
+     height:672px;
+     
+}
+#home::before{
+     height:2044px;
+     padding: 3px 68px;
+     
+}
+#home p{
+    font-size:13px;
+}
+/*services section*/
+#services{
+flex-direction:column;
+}
+#services .box{
+
+}
+/*client section*/
+#clients{
+flex-wrap:wrap;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Cappadociasunrise.jpg/1280px-Cappadociasunrise.jpg);
+    width: 115%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+/*contact secction*/
+#contact::before{
+    content:"";
+    position:absolute;
+    width:121%;
+    height:128%;
+    z-index: -1;
+    opacity:1;
+    background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Social_media.png/1280px-Social_media.png')no-repeat center center/cover;
+
+}
+/*footer section*/
+/*utility classes*/
+.h-primary{
+    font-size: 26px;
+}
+.btn{
+    padding:4px 8px;
+}
+    </style> 
+
+
+
+
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tom%27s_Restaurant%2C_NYC.jpg/330px-Tom%27s_Restaurant%2C_NYC.jpg" alt="World's Finest Restaurant">
+        </div>
+        <ul>
+            <li class="item"><a herf="#">Home</a></li>
+            <li class="item"><a herf="#">Services</a></li>
+            <li class="item"><a herf="#">About Us</a></li>
+            <li class="item"><a herf="#">Contact Us</a></li>
+        </ul>
+    </nav>
+     <section id="home">
+         <h1 class="h-primary">Welcome To Sai's Restaurant </h1>
+         <div>  
+         <h2>MENU</h2>
+            
+                <h3>VEG</h3>
+            <li>Paneer Butter Masala</li>
+            <li>Salad</li>
+            <li>Mushroom Curry</li>
+                <h3>NON VEG</h3>
+            <li>Chicken Curry</li>
+            <li>Fish Curry</li>
+            <li>Prawn</li>
+               <h3>Desert</h3>
+               <li>Icecream</li>
+               <li>Cake</li>
+               <li>Sweeets</li>
+
+            </div>
+            
+         <button class="btn">Book Now</button>
+     </section>
+     <section class="services-container">
+         <h1 class="h-primary center">Our Services</h1>
+         <div id="services">
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Arkansas_BBQ_001.jpg/330px-Arkansas_BBQ_001.jpg" alt="">
+                <h2 class="h-secondary">.........................Dining.............................. </h2>
+                <p class="center">In our bid to deliver authentic, undiluted experiences, we’ve introduced a unique regional home style dining experience. Always prepared with a local touch, the home-style cooking ensures that you maintain good health throughout your stay. And at the same time it gives you the opportunity to dabble in the local delicacies.
+
+                </p>
+            </div>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/225px-Zomato_logo.png" alt="">
+                <h2 class="h-secondary">...................Food Order.........................</h2>
+                <p class="center">Zomato is an Indian multinational restaurant aggregator and food delivery company founded by Deepinder Goyal and Pankaj Chaddah in 2008. Zomato provides information, menus and user-reviews of restaurants as well as food delivery options from partner restaurants in select cities</p>
+            </div>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Classical_spectacular10.jpg/330px-Classical_spectacular10.jpg" alt="">
+                <h2 class="h-secondary">.................Parties and FUN.................</h2>
+                <p class="center">"WELCOME TO PARTIES N FUN! Parties N Fun Is Your Most Affordable Solution for Party Rentals & Bounce Houses! Parties N Fun offers creative family entertainment for Private Birthday Parties, Schools, Churchs, Community Events, Grand Openings, Corporate Functions, Family Day or any other type event.</p>
+            </div>
+         </div>
+     </section>
+     <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/OYO_Rooms_logo.png/330px-OYO_Rooms_logo.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Taj_Hotels_logo.svg/150px-Taj_Hotels_logo.svg.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Westin_Hotels_%26_Resorts_logo.svg/300px-Westin_Hotels_%26_Resorts_logo.svg.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Swiggy_logo.svg/480px-Swiggy_logo.svg.png" alt="Our Clients">
+            </div>
+           
+        </div>
+
+     </section>
+     <section id="contact">
+         <h1 class="h-primary center">CONTACT US</h1>
+         <div id="contact-box">
+             <form action="">
+                 <div class="form-group">
+                     <label for="name">Name: </label>
+                     <input type="text" name="name" id="name" placeholder="Enter your name ">
+                 </div>
+                 <div class="form-group">
+                     <label for="email">Email: </label>
+                     <input type="text" name="name" id="email" placeholder="Enter your email id ">
+                 </div>
+                 <div class="form-group">
+                     <label for="phone">Phone number: </label>
+                     <input type="text" name="name" id="phone" placeholder="Enter your Phone number ">
+                 </div>
+                 <div class="form-group">
+                     <label for="message">Message: </label>
+                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter any message if you have"></textarea>
+                    </div>
+                 <div>
+                     <button class="sub">Submit</button>
+                 </div>
+             </form>
+         </div>
+     </section>
+     <footer>
+         <div class="center">
+             Copyright &copy; www.SaiRestaurant.com. All rights reserved!
+         </div>
+     </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/*Navigation section*/
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a {
+     font-size:1rem;
+     padding:0px 7px;
+}
+/*home section*/ 
+#home{
+     height:672px;
+     
+}
+#home::before{
+     height:2044px;
+     padding: 3px 68px;
+     
+}
+#home p{
+    font-size:13px;
+}
+/*services section*/
+#services{
+flex-direction:column;
+}
+#services .box{
+
+}
+/*client section*/
+#clients{
+flex-wrap:wrap;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Cappadociasunrise.jpg/1280px-Cappadociasunrise.jpg);
+    width: 115%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+/*contact secction*/
+#contact::before{
+    content:"";
+    position:absolute;
+    width:121%;
+    height:128%;
+    z-index: -1;
+    opacity:1;
+    background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Social_media.png/1280px-Social_media.png')no-repeat center center/cover;
+
+}
+/*footer section*/
+/*utility classes*/
+.h-primary{
+    font-size: 26px;
+}
+.btn{
+    padding:4px 8px;
+}
+
+
